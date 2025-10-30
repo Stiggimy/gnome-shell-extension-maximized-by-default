@@ -11,6 +11,20 @@ This new version is **updated up to GNOME 49** and **fixes an annoying bug**: it
 
 ## Installation
 
+There are two ways to install this extension.
+
+### Method 1: GNOME Extensions Website (Recommended)
+
+The easiest way is to install it from the official GNOME Extensions website:
+
+1.  Visit the extension page at [**extensions.gnome.org**](https://extensions.gnome.org/extension/8756/maximized-by-default-actually-reborn/) 2.  Click the "ON" switch.
+
+You can also search for "Maximized by default actually revived" directly from the **Extension Manager** app on your desktop.
+
+### Method 2: Install from Source (Manual)
+
+If you prefer to install from source or want to test the latest development version.
+
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/Stiggimy/gnome-shell-extension-maximized-by-default.git](https://github.com/Stiggimy/gnome-shell-extension-maximized-by-default.git)
