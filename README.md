@@ -1,7 +1,7 @@
 # Maximized by default Revived
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GNOME Shell](https://img.shields.io/badge/GNOME-45%2C%2046%2C%2049%2B-blue.svg)](https://www.gnome.org)
+[![GNOME Shell](https://img.shields.io/badge/GNOME-45--49-blue.svg)](https://www.gnome.org)
 A simple GNOME Shell extension that maximizes all new application windows on launch.
 
 This is a **revived** fork of the original [Maximized by default by aXe1](https://github.com/aXe1/gnome-shell-extension-maximized-by-default) and its subsequent ["reborn" fork](https://github.com/brennoflavio/gnome-shell-extension-maximized-by-default), all of which are no longer maintained.
