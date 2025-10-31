@@ -19,7 +19,7 @@ The easiest way is to install it from the official GNOME Extensions website:
 
 1.  Visit the extension page at [**extensions.gnome.org**](https://extensions.gnome.org/extension/8756/maximized-by-default-actually-reborn/) 2.  Click the "ON" switch.
 
-You can also search for "Maximized by default actually revived" directly from the **Extension Manager** app on your desktop.
+You can also search for "Maximized by default actually reborn" directly from the **Extension Manager** app on your desktop.
 
 ### Method 2: Install from Source (Manual)
 
