@@ -1,4 +1,4 @@
-# Maximized by default Revived
+# Maximized by default actually reborn
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GNOME Shell](https://img.shields.io/badge/GNOME-45--49-blue.svg)](https://www.gnome.org)
