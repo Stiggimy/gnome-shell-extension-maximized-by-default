@@ -1,6 +1,6 @@
 {
   "name": "Maximized by default actually reborn",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Make all windows maximized on start. Updated for GNOME 49 and ignores context menus.",
   "url": "https://github.com/Stiggimy/gnome-shell-extension-maximized-by-default",
   "uuid": "gnome-shell-extension-maximized-by-default@stiggimy.github.com",
