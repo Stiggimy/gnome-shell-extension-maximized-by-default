@@ -1,22 +1,18 @@
 import Meta from 'gi://Meta';
-import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 
-export default class MaximizedByDefaultExtension extends Extension {
+export default class MaximizedByDefaultExtension {
     enable() {
-        this._windowCreatedId = global.display.connect('window-created', (d, win) => {
-            // Checks if the window is of "NORMAL" type (an actual app)
-            // Also checks if the window can actually be maximized
-            if (win.get_window_type() === Meta.WindowType.NORMAL && win.can_maximize()) {
-                // Only if both the checks return true, maximize the window
-                win.maximize(Meta.MaximizeFlags.HORIZONTAL | Meta.MaximizeFlags.VERTICAL);
-            }
-        });
+        global.display.connectObject('window-created', (display, window) => {
+            window?.connectObject('shown', window => {
+                if (window?.get_window_type() === Meta.WindowType.NORMAL && window?.can_maximize()) {
+                    window?.maximize(Meta.MaximizeFlags.BOTH);
+                    window?.disconnectObject(this);
+                }
+            }, this);
+        }, this);
     }
 
     disable() {
-        if (this._windowCreatedId) {
-            global.display.disconnect(this._windowCreatedId);
-            this._windowCreatedId = null;
-        }
+        global.display.disconnectObject(this);
     }
 }
