@@ -31,9 +31,8 @@ UUID=$(cat $TEMP_DIR/metadata.json | grep uuid | cut -d \" -f4)
 
 # Check if extension already exists
 if [ -d "$EXTENSION_DIR/$UUID" ]; then
-    echo "Extension with UUID $UUID already exists. Exiting..."
-    rm -rf $TEMP_DIR
-    exit 1
+    echo "Extension with UUID $UUID already exists. Removing old version..."
+    rm -rf "$EXTENSION_DIR/$UUID"
 fi
 
 # Create extension directory

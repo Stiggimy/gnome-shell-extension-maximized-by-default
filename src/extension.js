@@ -5,7 +5,7 @@ export default class MaximizedByDefaultExtension {
         global.display.connectObject('window-created', (display, window) => {
             window?.connectObject('shown', window => {
                 if (window?.get_window_type() === Meta.WindowType.NORMAL && window?.can_maximize()) {
-                    window?.maximize(Meta.MaximizeFlags.BOTH);
+                    window?.maximize();
                     window?.disconnectObject(this);
                 }
             }, this);
