@@ -14,9 +14,9 @@ export default class MaximizedByDefaultExtension {
                     } else {
                         window.maximize(Meta.MaximizeFlags.BOTH);
                     }
-
-                    window?.disconnectObject(this);
                 }
+
+                window?.disconnectObject(this);
             }, this);
         }, this);
     }
